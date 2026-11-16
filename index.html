@@ -1,160 +1,369 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<title>FlexBlog</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700" rel="stylesheet">
+	<title>Imperial Barber Club | Barbearia & Agendamento Online</title>
+	<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
+	<!-- Superinfo (Horários, Contato e Endereço) -->
 	<div class="superinfo-bg">
 		<div class="superinfo">
-			<p>Seg / Sex - 08:00 às 18:00</p>
-			<a href="tel:+552199999999">+55 21 9999-9999</a>
-			<p>Av. Ali Perto, 330, Botafogo - RJ</p>
+			<p>🕒 Seg / Sáb - 09:00 às 20:00</p>
+			<a href="https://wa.me/5511999998888" target="_blank" rel="noopener">📱 WhatsApp: (11) 99999-8888</a>
+			<p>📍 Rua dos Barbeiros, 420 - Centro</p>
 		</div>
 	</div>
 	
+	<!-- Cabeçalho e Menu de Navegação -->
 	<header class="menu-bg">
 		<div class="menu">
 			<div class="menu-logo">
-				<a href="#">FlexBlog</a>
+				<a href="#">Imperial <span>Barber</span></a>
 			</div>
 			<nav class="menu-nav">
 				<ul>
 					<li><a href="#sobre">Sobre</a></li>
-					<li><a href="#produtos">Produtos</a></li>
-					<li><a href="#preco">Preço</a></li>
-					<li><a href="#qualidade">Qualidade</a></li>
+					<li><a href="#servicos">Serviços</a></li>
+					<li><a href="#planos">Planos</a></li>
+					<li><a href="#diferenciais">Diferenciais</a></li>
+					<li><a href="#agendamento" class="btn-agendar-nav">Marcar Hora</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	
-	<h1 class="introducao">Novos valores e<br>Propriedades de CSS</h1>
+	<!-- Hero / Introdução -->
+	<div class="introducao-bg">
+		<section class="introducao">
+			<span class="introducao-tag">Barbearia Tradicional</span>
+			<h1>Corte alinhado, barba na navalha e <span>preço justo</span>.</h1>
+			<p>Sem frescura: corte no capricho, pontualidade britânica e uma cerveja gelada por conta da casa.</p>
+			<a href="#agendamento" class="btn-cta">Agendar Meu Horário</a>
+		</section>
+	</div>
 	
+	<!-- Seção Sobre a Barbearia -->
 	<section class="sobre" id="sobre">
 		<div class="sobre-info">
-			<h1>Sobre</h1>
-			<p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
-			<p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
+			<h1>A Barbearia</h1>
+			<p>A gente acredita no <strong>básico bem feito</strong>. Nada de enrolação ou termos difíceis: você senta na cadeira, fala como quer e sai com o visual alinhado.</p>
+			<p>Aqui você encontra barbeiros experientes de verdade, toalha morna, navalha afiada, futebol passando na TV e respeito total ao seu horário marcado.</p>
 		</div>
 		<div class="sobre-img">
-			<img src="img/sobre1.jpg" alt="Sobre 1">
+			<img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" alt="Espaço da Barbearia Imperial">
 		</div>
 		<div class="sobre-img">
-			<img src="img/sobre2.jpg" alt="Sobre 2">
+			<img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80" alt="Barbeiro profissional em atendimento">
 		</div>
 	</section>
 	
-	<section class="produtos" id="produtos">
-		<h1>Produtos</h1>
+	<!-- Seção de Serviços -->
+	<section class="produtos" id="servicos">
+		<h1>Serviços</h1>
+		<p class="produtos-sub">O básico bem feito, sem enrolação e com preço justo.</p>
 		<div class="produtos-container">
-			<div class="produtos-item purple">
-				<h2>Purple</h2>
-				<img src="img/produtos1.jpg" alt="Produtos 1">
+			
+			<div class="produtos-item corte">
+				<img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80" alt="Corte de Cabelo Masculino">
+				<div class="produtos-item-corpo">
+					<h2>Cabelo</h2>
+					<p>Máquina, tesoura ou degradê. Corte rápido, bem alinhado e no capricho.</p>
+					<span class="preco-servico">R$ 30,00</span>
+				</div>
 			</div>
-			<div class="produtos-item pink">
-				<h2>Pink</h2>
-				<img src="img/produtos2.jpg" alt="Produtos 2">
+			
+			<div class="produtos-item barba">
+				<img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80" alt="Fazer a Barba na Navalha">
+				<div class="produtos-item-corpo">
+					<h2>Barba</h2>
+					<p>Barba aparada, desenhada ou raspada na navalha com toalha morna.</p>
+					<span class="preco-servico">R$ 20,00</span>
+				</div>
 			</div>
-			<div class="produtos-item blue">
-				<h2>Blue</h2>
-				<img src="img/produtos3.jpg" alt="Produtos 3">
+			
+			<div class="produtos-item combo">
+				<img src="https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=600&q=80" alt="Cabelo e Barba">
+				<div class="produtos-item-corpo">
+					<h2>Cabelo + Barba</h2>
+					<p>O pacote clássico. Corta o cabelo e alinha a barba no mesmo atendimento.</p>
+					<span class="preco-servico">R$ 50,00</span>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	
+	<!-- Seção de Preços / Clube de Assinatura -->
+	<div class="preco-bg" id="planos">
+		<div class="preco-container">
+			<div class="preco-header">
+				<h1>Valores &amp; Planos</h1>
+				<p>Escolha o corte avulso ou economize com nossos planos de <strong>até 3 cortes por mês</strong>.</p>
+			</div>
+			
+			<div class="preco">
+				<div class="preco-item">
+					<h2>Individual</h2>
+					<span><sup>R$</sup>30<small>/corte</small></span>
+					<ul>
+						<li>1 Corte de cabelo</li>
+						<li>Sem mensalidade ou fidelidade</li>
+						<li>Pague na hora na barbearia</li>
+						<li>Chopp ou café cortesia</li>
+						<li>Atendimento no horário marcado</li>
+					</ul>
+					<a href="#agendamento" class="btn-plano-selecionar" data-servico="Corte Individual (R$ 30)">Agendar</a>
+				</div>
+				
+				<div class="preco-item">
+					<h2>Mensal</h2>
+					<span><sup>R$</sup>75<small>/mês</small></span>
+					<ul>
+						<li>Até 3 Cortes por mês</li>
+						<li>Sai R$ 25 cada corte</li>
+						<li>Renovação mês a mês</li>
+						<li>Sem contrato de fidelidade</li>
+						<li>Chopp cortesia em cada corte</li>
+					</ul>
+					<a href="#agendamento" class="btn-plano-selecionar" data-servico="Plano Mensal - Até 3 Cortes (R$ 75/mês)">Assinar Mensal</a>
+				</div>
+				
+				<div class="preco-item">
+					<h2>Anual</h2>
+					<span>12x <sup>R$</sup>60<small>Total: R$ 720 ao ano</small></span>
+					<ul>
+						<li>Até 3 Cortes por mês</li>
+						<li>Sai apenas R$ 20 cada corte!</li>
+						<li>Economia de R$ 360 no ano</li>
+						<li>Prioridade de horário na agenda</li>
+					</ul>
+					<a href="#agendamento" class="btn-plano-selecionar" data-servico="Plano Anual - Até 3 Cortes (R$ 720/ano)">Assinar Anual</a>
+				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	
-	<section class="preco" id="preco">
-		<div class="preco-item">
-			<h2>Cobre</h2>
-			<span><sup>R$</sup>19</span>
-			<ul>
-				<li>Planos Ilimitados</li>
-				<li>Acesso Restrito</li>
-				<li>Conteúdo Secreto</li>
-				<li>Suporte 24h</li>
-			</ul>
-			<a href="#">Comprar</a>
+	<!-- Seção de Diferenciais (Sem Frescura) -->
+	<section class="qualidade" id="diferenciais">
+		<div class="qualidade-item">
+			<h2>Barbeiro de Confiança</h2>
+			<p>Profissionais experientes que cortam do jeito que você pedir, sem inventar moda.</p>
 		</div>
 		
-		<div class="preco-item">
-			<h2>Prata</h2>
-			<span><sup>R$</sup>39</span>
-			<ul>
-				<li>Planos Ilimitados</li>
-				<li>Acesso Restrito</li>
-				<li>Conteúdo Secreto</li>
-				<li>Suporte 24h</li>
-				<li>Compra Exclusiva</li>
-			</ul>
-			<a href="#">Comprar</a>
+		<div class="qualidade-item">
+			<h2>Navalha Afiada</h2>
+			<p>Pezinho bem feito, alinhamento limpo e toalha morna para não irritar a pele.</p>
 		</div>
 		
-		<div class="preco-item">
-			<h2>Ouro</h2>
-			<span><sup>R$</sup>79</span>
-			<ul>
-				<li>Planos Ilimitados</li>
-				<li>Acesso Restrito</li>
-				<li>Conteúdo Secreto</li>
-				<li>Suporte 24h</li>
-				<li>Compra Exclusiva</li>
-				<li>Download dos Itens</li>
-			</ul>
-			<a href="#">Comprar</a>
+		<div class="qualidade-item">
+			<h2>Cerveja Gelada</h2>
+			<p>Chopp trincando ou aquele café preto passado na hora por conta da casa.</p>
+		</div>
+		
+		<div class="qualidade-item">
+			<h2>Sem Fila</h2>
+			<p>Agendou pelo site, é só chegar no horário, sentar na cadeira e mandar brasa.</p>
+		</div>
+		
+		<div class="qualidade-item">
+			<h2>Bons Produtos</h2>
+			<p>Pomadas e pós-barba de qualidade que seguram o penteado o dia todo.</p>
+		</div>
+		
+		<div class="qualidade-item">
+			<h2>Ambiente Resenha</h2>
+			<p>Ar-condicionado gelando, bate-papo tranquilo e jogo passando na televisão.</p>
 		</div>
 	</section>
 	
-	<section class="qualidade" id="qualidade">
-		<div class="qualidade-item">
-			<h2>Inteligente</h2>
-			<p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão </p>
-		</div>
-		
-		<div class="qualidade-item">
-			<h2>Compacto</h2>
-			<p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</p>
-		</div>
-		
-		<div class="qualidade-item">
-			<h2>Econômico</h2>
-			<p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão </p>
-		</div>
-		
-		<div class="qualidade-item">
-			<h2>Transparente</h2>
-			<p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão </p>
-		</div>
-		
-		<div class="qualidade-item">
-			<h2>Opaco</h2>
-			<p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</p>
-		</div>
-		
-		<div class="qualidade-item">
-			<h2>Sustentável</h2>
-			<p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão </p>
-		</div>
-		
-	</section>
+	<!-- Seção de Agendamento Online com Calendário -->
+	<div class="agendamento-bg" id="agendamento">
+		<section class="agendamento">
+			<div class="agendamento-info">
+				<span>Agendamento Rápido</span>
+				<h1>Marque seu horário</h1>
+				<p>Escolha o serviço, a data no calendário e o melhor horário. Confirmamos na hora!</p>
+				<ul class="agendamento-vantagens">
+					<li>✓ Confirmação direta pelo WhatsApp</li>
+					<li>✓ Paga somente na barbearia</li>
+					<li>✓ Sem fila e sem espera</li>
+				</ul>
+			</div>
+			
+			<div class="agendamento-form-container">
+				<form class="agendamento-form" id="form-agendamento">
+					<div class="form-group full">
+						<label for="nome">👤 Seu Nome</label>
+						<input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="telefone">📱 WhatsApp</label>
+						<input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="servico">✂️ O que vai fazer?</label>
+						<select id="servico" name="servico" required>
+							<option value="">Selecione...</option>
+							<option value="Corte Individual (R$ 30)">Corte Individual (R$ 30)</option>
+							<option value="Fazer a Barba (R$ 20)">Fazer a Barba (R$ 20)</option>
+							<option value="Cabelo + Barba (R$ 50)">Cabelo + Barba (R$ 50)</option>
+							<option value="Plano Mensal - Até 3 Cortes (R$ 75/mês)">Plano Mensal - Até 3 Cortes (R$ 75/mês)</option>
+							<option value="Plano Anual - Até 3 Cortes (R$ 720/ano)">Plano Anual - Até 3 Cortes (R$ 720/ano)</option>
+						</select>
+					</div>
+					
+					<!-- Campo de Barbeiro/Profissional (comentado)
+					<div class="form-group">
+						<label for="barbeiro">💈 Com quem?</label>
+						<select id="barbeiro" name="barbeiro">
+							<option value="Primeiro barbeiro disponível">Tanto faz (primeiro livre)</option>
+							<option value="Carlos">Carlos</option>
+							<option value="Rafael">Rafael</option>
+							<option value="Lucas">Lucas</option>
+						</select>
+					</div>
+					-->
+					
+					<!-- Campo com CALENDÁRIO para marcar a data -->
+					<div class="form-group">
+						<label for="data">📅 Escolha a Data</label>
+						<input type="date" id="data" name="data" required>
+					</div>
+					
+					<!-- Horário para o agendamento -->
+					<div class="form-group">
+						<label for="horario">⏰ Horário Disponível</label>
+						<select id="horario" name="horario" required>
+							<option value="">Selecione o horário...</option>
+							<option value="09:00">09:00</option>
+							<option value="10:00">10:00</option>
+							<option value="11:00">11:00</option>
+							<option value="13:30">13:30</option>
+							<option value="14:30">14:30</option>
+							<option value="15:30">15:30</option>
+							<option value="16:30">16:30</option>
+							<option value="17:30">17:30</option>
+							<option value="18:30">18:30</option>
+							<option value="19:00">19:00</option>
+						</select>
+					</div>
+					
+					<button type="submit" id="btn-submit">Confirmar Agendamento</button>
+				</form>
+				
+				<!-- Mensagem de Confirmação interativa -->
+				<div class="agendamento-sucesso" id="mensagem-sucesso">
+					<h3>✅ Horário Marcado com Sucesso!</h3>
+					<p id="resumo-agendamento"></p>
+					<a href="#" id="btn-whatsapp-confirm" target="_blank" rel="noopener" class="btn-whatsapp-confirm">
+						📱 Enviar Confirmação no WhatsApp da Barbearia
+					</a>
+					<button type="button" id="btn-voltar" class="btn-voltar">Marcar Outro Horário</button>
+				</div>
+			</div>
+		</section>
+	</div>
 	
-	<section class="newsletter">
-		<div class="newsletter-info">
-			<h1>Newsletter</h1>
-			<p>assine e fique por dentro das novidades</p>
-		</div>
-		<form class="newsletter-form">
-			<input type="text" placeholder="Seu e-mail">
-			<button type="submit">Assinar</button>
-		</form>
-	</section>
-	
+	<!-- Rodapé -->
 	<footer class="footer">
-		<p>FlexBlog © Todos os direitos reservados.</p>
+		<div class="footer-logo">Imperial Barber Club</div>
+		<p>Imperial Barber Club © Todos os direitos reservados. Tradição, Estilo &amp; Excelência.</p>
+		<p class="footer-creditos">Criado por <a href="https://biancodanilo.github.io/danilo/" target="_blank" rel="noopener">Danilo Bianco</a></p>
 	</footer>
+
+	<!-- Script de controle de agendamento e calendário -->
+	<script>
+		// Garante que o calendário não permita selecionar datas no passado
+		const inputData = document.getElementById('data');
+		const hoje = new Date().toISOString().split('T')[0];
+		inputData.min = hoje;
+		inputData.value = hoje;
+
+		// Máscara automática de telefone (11) 99999-9999
+		const inputTel = document.getElementById('telefone');
+		inputTel.addEventListener('input', function(e) {
+			let v = e.target.value.replace(/\D/g, '');
+			if (v.length > 11) v = v.slice(0, 11);
+			if (v.length > 6) {
+				e.target.value = `(${v.slice(0, 2)}) ${v.slice(2, 7)}-${v.slice(7)}`;
+			} else if (v.length > 2) {
+				e.target.value = `(${v.slice(0, 2)}) ${v.slice(2)}`;
+			} else if (v.length > 0) {
+				e.target.value = `(${v}`;
+			}
+		});
+
+		// Tratamento do envio do formulário
+		const form = document.getElementById('form-agendamento');
+		const mensagemSucesso = document.getElementById('mensagem-sucesso');
+		const resumoAgendamento = document.getElementById('resumo-agendamento');
+		const btnWhatsappConfirm = document.getElementById('btn-whatsapp-confirm');
+		const btnVoltar = document.getElementById('btn-voltar');
+
+		form.addEventListener('submit', function(event) {
+			event.preventDefault();
+			
+			const nome = document.getElementById('nome').value;
+			const telefone = document.getElementById('telefone').value;
+			const servico = document.getElementById('servico').value;
+			const barbeiroEl = document.getElementById('barbeiro');
+			const barbeiro = barbeiroEl ? barbeiroEl.value : '';
+			const data = document.getElementById('data').value;
+			const horario = document.getElementById('horario').value;
+
+			// Formatar data para padrão brasileiro (DD/MM/AAAA)
+			const partesData = data.split('-');
+			const dataFormatada = `${partesData[2]}/${partesData[1]}/${partesData[0]}`;
+
+			const textoBarbeiro = barbeiro ? ` com <strong>${barbeiro}</strong>` : '';
+			resumoAgendamento.innerHTML = `Obrigado, <strong>${nome}</strong>!<br>Seu horário para <strong>${servico}</strong>${textoBarbeiro} foi registrado para o dia <strong>${dataFormatada}</strong> às <strong>${horario}</strong>.`;
+			
+			// Gera link do WhatsApp com mensagem pronta
+			const linhaBarbeiro = barbeiro ? `\n💈 Barbeiro: ${barbeiro}` : '';
+			const msgWhatsapp = encodeURIComponent(`Olá! Acabei de agendar um horário no Imperial Barber Club:\n\n👤 Nome: ${nome}\n📱 WhatsApp: ${telefone}\n✂️ Serviço/Plano: ${servico}${linhaBarbeiro}\n📅 Data: ${dataFormatada}\n⏰ Horário: ${horario}\n\nPode confirmar meu horário?`);
+			btnWhatsappConfirm.href = `https://wa.me/5511999998888?text=${msgWhatsapp}`;
+
+			mensagemSucesso.style.display = 'block';
+			form.style.display = 'none';
+
+			mensagemSucesso.scrollIntoView({ behavior: 'smooth', block: 'center' });
+		});
+
+		btnVoltar.addEventListener('click', function() {
+			mensagemSucesso.style.display = 'none';
+			form.reset();
+			inputData.value = hoje;
+			form.style.display = 'flex';
+			form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+		});
+
+		// Seleciona o plano ou serviço automaticamente ao clicar nos botões dos cards
+		document.querySelectorAll('.btn-plano-selecionar').forEach(btn => {
+			btn.addEventListener('click', function() {
+				const servicoAlvo = this.dataset.servico;
+				const selectServico = document.getElementById('servico');
+				if (servicoAlvo && selectServico) {
+					selectServico.value = servicoAlvo;
+				}
+			});
+		});
+	</script>
+
+	<!-- Botão Flutuante do WhatsApp -->
+	<a href="https://wa.me/5511999998888?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20a%20barbearia." class="whatsapp-float" target="_blank" rel="noopener" title="Falar no WhatsApp">
+		<svg viewBox="0 0 24 24">
+			<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+		</svg>
+	</a>
 
 </body>
 </html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Fundo escuro com borda dourada -->
+  <rect width="64" height="64" rx="14" fill="#18181b" stroke="#d4af37" stroke-width="3"/>
+  
+  <!-- Coroa no topo (Imperial) -->
+  <path d="M22 22 L26 27 L32 18 L38 27 L42 22 L40 30 L24 30 Z" fill="#d4af37"/>
+  <circle cx="22" cy="20" r="1.5" fill="#f1c40f"/>
+  <circle cx="32" cy="16" r="1.8" fill="#f1c40f"/>
+  <circle cx="42" cy="20" r="1.5" fill="#f1c40f"/>
+
+  <!-- Bigode clássico estilizado -->
+  <path d="M32 36 C28 32, 20 31, 16 35 C18 41, 28 42, 32 38 C36 42, 46 41, 48 35 C44 31, 36 32, 32 36 Z" fill="#d4af37"/>
+  
+  <!-- Tesoura / Lâmina sutil na base -->
+  <circle cx="25" cy="46" r="3" fill="none" stroke="#d4af37" stroke-width="2"/>
+  <circle cx="39" cy="46" r="3" fill="none" stroke="#d4af37" stroke-width="2"/>
+  <line x1="27" y1="44" x2="35" y2="38" stroke="#d4af37" stroke-width="2" stroke-linecap="round"/>
+  <line x1="37" y1="44" x2="29" y2="38" stroke="#d4af37" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
